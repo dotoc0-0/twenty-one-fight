@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>21 -22's</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https:/unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+  <div id="game">
+    <!-- モード用 -->
+    <div class="for-fight">
+      <h1 id="round"></h1>
+      <p id="bet"></p>
+    </div>
+
+    <!-- 敵陣 -->
+    <div id="enemy" class="player hidden">
+      <div class="data">
+        <h1>Enemy</h1>
+        <div class="icon"></div>
+      </div>
+      <p class="sum"></p>
+      <div id="" class="cards"></div>
+    </div>
+
+    <!-- (決戦モード用) パワーゲージ -->
+    <div id="power" class="hidden">
+      <p class="value enemy"></p>
+      <div class="gage">
+        <div class="border"></div>
+      </div>
+      <p class="value me"></p>
+    </div>
+
+    <!-- マスター -->
+    <div id="master">
+      <div id="caption">
+      </div>
+      <div id="commands">
+        <div id="selectdraw" class="command hidden">
+          <button id="draw">引く</button>
+          <button id="notdraw">引かない</button>
+        </div>
+        <button id="btn" class="command">ボタン</button>
+      </div>
+
+    </div>
+
+    <!-- 自陣 -->
+    <div id="me" class="player hidden">
+      <div class="data">
+        <h1>Player</h1>
+        <div class="icon"></div>
+      </div>
+      <p class="sum"></p>
+      <div id="" class="cards"></div>
+    </div>
+
+    <!-- メニュー -->
+    <ul id="menu">
+      <li><button id="menu-mode">モード</button></li>
+      <li><button id="menu-rule">ルール</button></li>
+      <li><a href="" id="menu-replay">最初から</a></li>
+
+      <ul id="mode-select" class="hidden">
+        <li><input type="radio" checked name="mode" id="shiren">
+          <p>試練</p>
+        </li>
+        <li><input type="radio" name="mode" id="fukushuu">
+          <p>復讐</p>
+        </li>
+        <li><input type="radio" name="mode" id="kessen">
+          <p>決戦</p>
+        </li>
+        <li><button>OK</button></li>
+      </ul>
+    </ul>
+  </div>
+
+  <!-- ルール画面 -->
+  <div id="rule" class="hidden">
+    <div class="close">
+      <span></span>
+      <span></span>
+    </div>
+    <h1>ルール</h1>
+    <div class="content">
+      <p class="text"></p>
+      <div class="pagenation">
+        <p class="prev">← Prev</p>
+        <p class="page">1 / 1</p>
+        <p class="next">Next →</p>
+      </div>
+    </div>
+    <div class="tabs">
+      <p class="tab selected">ゲーム</p>
+      <p class="tab">モード</p>
+    </div>
+  </div>
+
+  
+  <footer>&copy;dotoc0_0</footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/rule.js"></script>
+</body>
+
+</html>
