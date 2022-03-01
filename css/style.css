@@ -160,7 +160,9 @@ button {
   align-items: center;
 }
 .player .icon.heart {
-  margin-left: 10px;
+  width: calc(100% - 110px);
+  margin-left: 20px;
+  justify-content: center;
 }
 .player .icon.heart img {
   padding: 0 2px;
